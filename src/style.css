@@ -1,0 +1,381 @@
+/* src/Navbar.css */
+   /* for home */
+   .home{
+  background-image: url('/public/images/home.jpg'); 
+
+   } 
+   p{
+    font-size: x-large;
+    font-style: oblique;
+   }
+
+   /* for Team form */
+
+
+.team-form-container {
+  margin-top: 50px;
+  margin-left: 300px;
+  background-color: #f7f9fc; /* Light grey background */
+  border-radius: 8px; /* Rounded corners */
+  padding: 20px; /* Padding inside the container */
+  max-width: 500px; /* Maximum width for the container */
+  /* margin: 0 auto; Center the container horizontally */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+  font-family: Arial, sans-serif; /* Font family */
+}
+
+.team-form-container h2 {
+  color: #333; /* Dark grey for the heading */
+  margin-bottom: 10px; /* Space below the heading */
+}
+
+.team-form-container p {
+  color: #666; /* Grey for the paragraph */
+  margin-bottom: 20px; /* Space below the paragraph */
+  font-size: small;
+}
+
+.team-form-container ul {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0; /* Remove padding */
+}
+
+.team-form-container li {
+  margin-bottom: 10px; /* Space between list items */
+}
+
+.team-form-container a {
+  color: #007bff; /* Blue color for links */
+  text-decoration: none; /* Remove underline from links */
+  font-weight: bold; /* Bold text for links */
+}
+
+.team-form-container a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+  /* login and sign up */
+  /* Style.css */
+.login-bg {
+  /* background-image: url('/public/Images/login.jpg');  */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.login-container {
+  background-color: rgba(0, 0, 0, 0.5); 
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(173, 37, 37, 0.3);
+  width: 35%;
+  color: rgb(240, 244, 247);
+}
+.login-container .mt-3 {
+  color: white;
+}
+.login-container .mb-4 {
+    text-align: center;
+}
+  
+  .form-label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  /* Form input styling */
+  .form-control {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  /* Form button styling */
+  .btn-success {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+  }
+  
+  .btn-success:hover {
+    background-color: #706bf0;
+  }
+  
+  /* Link styling */
+  .login-container p {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .login-container a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .login-container a:hover {
+    text-decoration: underline;
+  }
+  
+  .bg-signup{
+    /* background-image: url('/public/Images/signup.jpg');  */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .signup-container {
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(173, 37, 37, 0.3);
+    width: 35%;
+    color: rgb(240, 244, 247);
+    margin-right:50%;
+    height: 500px;
+    padding: 0.5px 8px;
+  }
+.signup-container .mb-4{
+  text-align: center;
+  /* margin-top: %; */
+}
+
+form button {
+  margin-top: 4%;
+}
+.mb-4 label {
+  font-size: 1rem; /* Set a consistent font size */
+  margin-bottom: 0.4rem; /* Add some space below the label */
+  color: #fcf1f1; /* Set a text color */
+}
+
+.mb-4 .form-select {
+  padding: 0.5rem;
+  font-size: 1rem; 
+  border: 1px solid #ccc; /* Set a border color */
+  border-radius: 4px; /* Round the corners slightly */
+  outline: none; /* Remove the default outline */
+  background-color: #fff; /* Set background color */
+  color: #333; /* Set text color */
+  transition: border-color 0.3s; /* Add a transition for the border color */
+}
+.mb-4 .select{
+  margin-left: 5%;
+}
+
+.mb-4 .form-select:focus {
+  border-color: #66afe9; /* Change the border color on focus */
+  box-shadow: 0 0 8px rgba(102, 175, 233, 0.6); /* Add a shadow on focus */
+}
+
+.mb-4{
+  margin-bottom: 4%;
+}
+.sign{
+  text-align: center;
+  margin-top: 0.5%;
+}
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f8f9fa; /* Adjust the background color as needed */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+  margin-left: 250px;
+}
+
+.header-left {
+  font-size: 16px;
+  color: #333;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  width: 250px; 
+  height: auto;
+}
+
+.chatbot {
+  display: flex;
+  flex-direction: column;
+  height: 350px;
+  width: 70%;
+  border: 1px solid #e21010;
+  border-radius: 4px;
+  overflow: hidden;
+  background-color: white;
+}
+
+
+.chatbot-messages {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+.message {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.message.bot {
+  background-color: #f1f1f1;
+  align-self: flex-start;
+}
+
+.message.user {
+  background-color: #007bff;
+  color: white;
+  align-self: flex-end;
+}
+
+.chatbot-input {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+}
+.chatbot{
+  margin-left: 280px;
+}
+.chatbot-input input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.chatbot-input button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.chatbot-input button:hover {
+  background-color: #0056b3;
+}
+
+
+/* for guildline component */
+/* Container styling */
+.guideline-container {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Title styling */
+.guideline-title {
+  font-size: 24px;
+  color: #343a40;
+  margin-bottom: 10px;
+}
+
+/* Paragraph text styling */
+.guideline-text {
+  font-size: 16px;
+  color: #6c757d;
+  margin-bottom: 20px;
+}
+
+/* Link styling */
+.guideline-link {
+  font-size: 18px;
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Link hover effect */
+.guideline-link:hover {
+  color: #0056b3;
+  transform: translateY(-3px);
+}
+
+/* Animation effect on container hover */
+.guideline-container:hover {
+  transform: scale(1.02);
+}
+
+
+/* css for guildeline page */
+.course-info {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.course-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2em;
+  color: #333;
+}
+
+.sections {
+  border-top: 2px solid #ddd;
+}
+
+.section {
+  margin: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.section-title {
+  background: #f9f9f9;
+  padding: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.section-title.active {
+  background: #e0f7fa;
+}
+
+.section-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+  padding: 0 15px;
+}
+
+.section-content.show {
+  max-height: 200px; /* adjust based on content */
+  padding: 15px;
+}
