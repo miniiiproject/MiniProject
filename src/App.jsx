@@ -3,10 +3,14 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; // Import Routes instead of Switch
 import Navbar from './navbar'; 
 import Home from './Home'; 
-import TeamForm from './TeamForm';
+import TeamForm from './Tasks';
 import Guidelines from './Guidelines';
 import Document from './Document';
+import Notification from './Notification';
+import Coordinator from './Coordinator';
 // import Contact from './Contact';
+import Footer from './Footer';
+
 import './App.css'; // Import your CSS file
 
 function App() {
@@ -17,14 +21,15 @@ function App() {
         <main>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/TeamForm" element={<TeamForm />} />
             <Route path="/Guidelines" element={<Guidelines />} />
+            <Route path="/Tasks" element={<TeamForm />} />
             <Route path='/Documents' element={<Document />}/>
-
-            {/* <Route path="/contact" element={<Contact />} /> */}
+            <Route path='/Notification' element={<Notification />}/>
+            <Route path="/Coordinator" element={<Coordinator />} /> 
           </Routes>
         </main>
       </div>
+      <Footer />
     </Router>
   );
 }

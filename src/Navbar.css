@@ -190,12 +190,13 @@ i {
   }
 }
 
+
 .navbar-logo {
-  margin-left: 0;
-  margin-top: 10px;
+  margin-left: auto; /* Pushes logo to the right */
+  padding-right: 10px; /* Adjusts spacing at the right edge */
 }
 
 .navbar-logo img {
+  height: 28px; /* Adjust the logo size as needed */
   display: block;
-  margin: 0 auto;
 }

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './style.css';
 
 const Guidelines = () => {
@@ -10,8 +11,7 @@ const Guidelines = () => {
     { title: 'Project Team Size', 
     content: 'The project team must have no more than four members. Based on the students abilities and the mentor recommendations, a single discipline or a multidisciplinary project can be assigned to a team.' },
     { title: 'Project Workbook', content: 'Each team member must maintain a project workbook that documents all the work carried out, such as literature collection, surveys, blueprint sheets, results, analysis, and report preparation (Refer Annexure-I).' },
-
-    { title: 'Conclusion', content: 'Wrap-up and review of everything covered in the course.' },
+    { title: 'End Semester Assessment', content: 'A team of appointed examiners will conduct the End Semester Assessment.' },
   ];
 
   const handleToggle = (index) => {
@@ -36,6 +36,9 @@ const Guidelines = () => {
           </div>
         ))}
       </div>
+      <Link to="/Tasks">
+        <button className="btn btn-primary">Go to Tasks</button>
+      </Link>
     </div>
   );
 };

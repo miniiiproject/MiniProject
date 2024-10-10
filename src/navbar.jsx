@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 import $ from 'jquery';
-// import logo from './public/images/logo.png';
+
 const Navbar = () => {
   useEffect(() => {
     const test = () => {
@@ -37,10 +37,10 @@ const Navbar = () => {
 
     setTimeout(() => { test(); }, 0);
     $(window).on('resize', function () {
-      setTimeout(() => { test(); }, 500);
+      setTimeout(() => { test(); }, 50);
     });
     $(".navbar-toggler").click(function () {
-      $(".navbar-collapse").slideToggle(300);
+      $(".navbar-collapse").slideToggle(30);
       setTimeout(() => { test(); });
     });
 
@@ -67,19 +67,17 @@ const Navbar = () => {
             <Link className="nav-link" to="/Guidelines"><i className="far fa-chart-bar">Guidelines</i></Link>
           </li>
           <li className="nav-item active">
-            <Link className="nav-link" to="/TeamForm"><i className="far fa-address-book">TeamForm</i></Link>
+            <Link className="nav-link" to="/Tasks"><i className="far fa-address-book">Tasks</i></Link>
           </li>
           <li className="nav-item">
             <Link className="nav-link" to="/documents"><i className="far fa-copy"></i>Documents</Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to="/notifications"><i className="far fa-copy"></i>Notifications</Link>
+            <Link className="nav-link" to="/coordinator"><i className="far fa-copy"></i>Coordinator</Link>
           </li>
         </ul>
-        {/* Add the logo here */}
         <div className="navbar-logo">
-        {/* <img src={`${process.env.PUBLIC_URL}./public/images/logo.png`} /> */}
-
+          <img src={`${process.env.PUBLIC_URL}/images/logo1.png`} alt="Logo" />
         </div>
       </div>
     </nav>
